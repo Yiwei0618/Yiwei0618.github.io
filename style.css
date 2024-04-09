@@ -1,0 +1,107 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a universal box-sizing rule */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Style the header element */
+header {
+    background-color: #fff; /* Change this to match your desired header background color */
+    padding: 1rem 2rem; /* Adjust padding to increase or decrease space inside the header */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow to the header */
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* This will space out your logo and nav-links */
+    align-items: center; /* Aligns the navigation links vertically */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* This will align your links to the right */
+}
+
+.logo{
+    color:#007bff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none; /* Removes the underline from links */
+    color: #333; /* Change this to your desired link color */
+    font-size: 1rem; /* Adjust the font size as needed */
+    font-weight: 600; /* Makes the font a bit bolder */
+    margin: 0 1rem; /* Adjust the space between the navigation links */
+    padding: 0.5rem 0; /* Adjust padding for the clickable area */
+    position: relative;
+}
+
+/* Adds a hover effect */
+nav a:hover,
+nav a:focus {
+    color: #007bff; /* Change this to your desired hover color */
+}
+
+/* Adds an underline effect on hover */
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007bff; /* Match this to your hover color */
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+#greeting {
+   color:rgb(0, 0, 0) ;
+   margin-top: 70px; /* Adds space above the greeting */
+   margin-left: 70px; /* Adds space to the left of the greeting */
+
+}
+
+
+
+#intro{
+
+    font-size: 20px;
+    margin-top: 50px; /* Adds space above the greeting */
+   margin-left: 70px; /* Adds space to the left of the greeting */
+
+
+
+}
+
+#intro a:link , #intro a:visited {
+    color: darkorange
+
+
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-gap: 10px; /* Space between images */
+}
+
+.image-item img {
+    width: 50%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
