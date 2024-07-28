@@ -1,88 +1,77 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
     color: #333;
-  }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
-  
-  .container-section {
+    line-height: 1.6;
+}
+
+.container-section {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 85px;
-  }
-  
-  .intro-section {
-    width: 100%;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.intro-section {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     gap: 45px;
-  }
-  
-  .text-block {
-    width: 718px;
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-  }
-  
-  .header-text {
-    width: 196px;
-    height: 44px;
-    color: black;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.header-text {
     font-size: 36px;
     font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  .description-text {
-    width: 718px;
-    color: black;
+}
+
+.description-text {
     font-size: 24px;
     font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  .profile-image {
+}
+
+.profile-image {
     width: 443px;
     height: 295px;
     border-radius: 50px;
-  }
-  
-  .hobby-section {
+}
+
+.hobby-section {
+    max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 57px;
-  }
-  
-  .image-gallery {
-    width: 1259.79px;
+}
+
+.image-gallery {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 55px;
-  }
-  
-  .gallery-image {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-image {
     border-radius: 10px;
-  }
-  
-  .caption-text {
-    width: 1065px;
-    color: black;
+    flex: 1;
+}
+
+.caption-text {
     font-size: 22px;
     font-weight: 400;
-    word-wrap: break-word;
-    position: relative;
-    top: 375px;
-  }
-  
+    text-align: center;
+    margin-top: 20px;
+}
