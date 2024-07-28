@@ -1,36 +1,188 @@
+/*-------- Global ----------*/
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-family: "Lexend", sans-serif;
+  /* font-weight: 100; */
+}
+
+header {
+  /* width: 95%; */
+  position: relative;
+  margin: 16px;
+  padding: 16px;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 rgba(0,0,0);
+}
+/* change margin and padding for nav bar */
+
 body {
-  font-family: 'Inter', sans-serif;
-  color: #333;
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-optical-sizing: auto;
+  font-size: 32px;
+  font-weight: 600;
+  color: #17191A;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #17191A;
+}
+
+h3 {
+  font-size:16px;
+  font-weight: 500;
+  color: #17191A;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #5E5C5C;
+}
+
+h5 {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #17191A;
+}
+
+p {
+  color: #5E5C5C;
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: #5A7C54;
+}
+
+a:hover {
+  text-decoration: none;;
+  color: #5A7C54;
+}
+
+
+
+/*-------- Nav ----------*/
+
+nav{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+nav.tiffanyWu{
+  float: left;
+}
+nav ul{
   margin: 0;
   padding: 0;
-}
-
-header .menu {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  color: #bebebe;
+}
+nav ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #bebebe;
+}
+nav ul li a.active, nav ul li a:hover{
+  color: #5A7C54;
+  text-decoration: none;
 }
 
-header .name {
-  color: black;
-  font-size: 24px;
-  font-weight: 400;
-  word-wrap: break-word;
+.menu-toggle i{
+  float: right;
+  display: none;
+}
+.menu-toggle i:hover{
+  color: #5A7C54;
 }
 
-header .nav-links {
-  width: 316px;
-  height: 29px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+  }
+  .menu-toggle i.fa.fa-bars{
+    float: right;
+    display: block;
+  }
+  .menu-toggle.active i.fa.fa-bars{
+    display: none;
+  }
+  .menu-toggle.active i.fa.fa-times{
+    float: right;
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  nav.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  nav.active ul{
+    display: block;
+    text-align: center;
+  }
+  header {
+    width: 90%;
+  }
 }
 
-header .nav-link {
-  color: black;
-  font-size: 24px;
-  font-weight: 400;
-  word-wrap: break-word;
+.overlay{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+}
+
+.overlay img{
+  width:80px;
+  opacity: 0;
+}
+
+.tiffanyWu:hover .overlay{
+  opacity: 1;
+}
+
+.overlay img:hover{
+  opacity: 1;
 }
