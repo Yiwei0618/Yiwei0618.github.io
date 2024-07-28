@@ -1,0 +1,36 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .name {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+header .nav-links {
+  width: 316px;
+  height: 29px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-link {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
