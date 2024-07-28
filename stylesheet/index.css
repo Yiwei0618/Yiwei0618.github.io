@@ -1,77 +1,40 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
     color: #333;
-    line-height: 1.6;
-}
-
-.container-section {
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .container-section {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 20px;
-}
-
-.intro-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 45px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.text-block {
-    flex: 1;
-}
-
-.header-text {
-    font-size: 36px;
-    font-weight: 400;
-}
-
-.description-text {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.profile-image {
+    height: 100%;
+    position: relative;
+  }
+  
+  .profile-image {
     width: 443px;
     height: 295px;
     border-radius: 50px;
-}
-
-.hobby-section {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 57px;
-}
-
-.image-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.gallery-image {
-    border-radius: 10px;
-    flex: 1;
-}
-
-.caption-text {
-    font-size: 22px;
+  }
+  
+  .text-container {
+    width: 718px;
+    height: 638px;
+    position: relative;
+  }
+  
+  .greeting-text {
+    color: black;
+    font-size: 36px;
     font-weight: 400;
-    text-align: center;
-    margin-top: 20px;
-}
+    word-wrap: break-word;
+  }
+  
+  .description-text {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
