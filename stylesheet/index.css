@@ -1,24 +1,14 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styles */
-  body {
+body {
     font-family: 'Inter', sans-serif;
     color: #333;
+    margin: 0;
+    padding: 0;
   }
   
-  /* Navbar Styles */
   .navbar {
     background-color: #f8f9fa;
     padding: 1rem;
     border-bottom: 1px solid #e0e0e0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   
   .navbar-brand {
@@ -29,12 +19,15 @@
   
   .navbar-collapse {
     display: flex;
+    justify-content: flex-end;
   }
   
   .navbar-nav {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-item .nav-link {
@@ -43,43 +36,112 @@
     font-size: 1rem;
   }
   
-  /* Container Styles */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
   }
   
-  .content {
+  .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 100px 0 150px 0;
   }
   
-  .text-block {
+  .description {
     flex: 1;
     margin-right: 2rem;
   }
   
-  .text-block h1 {
+  .description h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
   }
   
-  .text-block p {
+  .description p {
     font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    line-height: 2;
+    margin-bottom: 20px;
   }
   
-  .image-block {
+  .photo {
     flex-shrink: 0;
   }
   
-  .profile-image {
+  .photo img {
     width: 100%;
     max-width: 443px;
     height: auto;
     border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  
+  .description a {
+    text-decoration: none;
+    color: #5A7C54;
+  }
+  
+  .description a:hover {
+    text-decoration: none;
+    color: #5A7C54;
+  }
+  
+  .footerIcons a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footerIcons a:hover {
+    color: #5A7C54;
+  }
+  
+  .spacer {
+    height: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .description p {
+      width: 70%;
+    }
+  
+    .photo img {
+      width: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .description {
+      width: 90%;
+      margin: 30px auto 100px auto;
+    }
+  
+    .photo img {
+      width: 30%;
+    }
+  
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .description {
+      margin: 0;
+    }
+  
+    .photo {
+      margin-top: 30px;
+    }
   }
   
