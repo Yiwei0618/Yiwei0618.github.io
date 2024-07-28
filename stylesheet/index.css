@@ -1,49 +1,82 @@
-.container-section {
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .container-section {
     width: 100%;
     height: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
   }
   
-  .profile-image {
-    width: 443px;
-    height: 295px;
-    left: 803px;
-    top: 112px;
-    position: absolute;
-    border-radius: 50px;
+  .content-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .text-container {
+  .text-block {
     width: 718px;
-    height: 638px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
   }
   
-  .greeting-text {
-    width: 196px;
-    height: 44px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
+  .header-text {
     color: black;
     font-size: 36px;
-    font-family: Inter, sans-serif;
     font-weight: 400;
     word-wrap: break-word;
   }
   
   .description-text {
-    width: 718px;
-    height: 549px;
-    left: 0px;
-    top: 89px;
-    position: absolute;
     color: black;
     font-size: 24px;
-    font-family: Inter, sans-serif;
     font-weight: 400;
     word-wrap: break-word;
+    align-self: stretch;
+  }
+  
+  .profile-image {
+    width: 443px;
+    height: 295px;
+    border-radius: 50px;
+  }
+  
+  .hobby-section {
+    align-self: stretch;
+    height: 645px;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 55px;
+  }
+  
+  .gallery-image {
+    border-radius: 10px;
+  }
+  
+  .caption-text {
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 1065px;
   }
   
