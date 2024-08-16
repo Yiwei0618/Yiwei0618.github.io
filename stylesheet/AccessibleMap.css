@@ -1,0 +1,27 @@
+.detail {
+    width:60%;  /* to adjust the content width ratio to the screen */
+    align-items: center;
+    margin: 30px auto 0 auto;
+    line-height: 1.5;
+  }
+
+  
+  .detail h1{
+    font-weight: 600;
+  }
+
+
+
+  .detail h2{
+    color:#0378AD;
+
+  }
+
+
+  
+  @media screen and (max-width: 991px){
+    .detail{
+      width: 85%;
+    }
+  }
+  

@@ -1,0 +1,188 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* Description Section */
+.description-container {
+  width: 100%;
+  padding: 80px 70px;
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  flex-wrap: wrap;
+  margin-left: 140px; 
+}
+
+.description-text {
+  max-width: 45%;
+  
+}
+
+.description-text h1 {
+  margin-bottom: 20px;
+}
+
+.description-text p {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.description-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+
+}
+
+/* Hobbies Section */
+.hobbies-container {
+  width: 100%;
+  padding: 60px 70px; /* Reduced padding space between two section */
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  margin-left: 140px; 
+  margin-bottom: -100px;
+  
+}
+
+.hobbies-text {
+  max-width: 60%;
+
+}
+
+
+.accordion_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5vw 4vw;  /* Adjust padding for responsiveness */
+  box-sizing: border-box;
+  margin-left: 140px; 
+  margin-top: 20px; 
+}
+
+.accordion {
+  width: 100%;
+  color: #5b5b5b; /* Default accordion title text color */
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: color 0.4s, border-bottom-color 0.4s;
+  font-size: 18px;
+  position: relative;
+  border-bottom: 2px solid #317bbc; /* Blue bottom border only */
+  background-color: transparent; /* Keep background transparent */
+}
+
+.accordion:hover {
+  color: #317bbc; /* Change text color to blue on hover */
+  background-color: transparent; /* Keep background transparent */
+}
+
+.accordion::before {
+  content: '\25BA'; /* Default right arrow */
+  font-family: 'Material Icons'; /* Ensure you have Google Material Icons linked */
+  position: absolute;
+  right: 20px;
+  transition: transform 0.4s, color 0.4s;
+  color: #5b5b5b; /* Default arrow color */
+}
+
+.accordion:hover::before {
+  color: #317bbc; /* Change arrow color to blue on hover */
+}
+
+.accordion.active::before {
+  transform: rotate(90deg); /* Rotate arrow down when active */
+}
+
+.accordion.active {
+  color: #317bbc; /* Change text color to blue when active */
+  background-color: transparent; /* Keep background transparent when active */
+  border-bottom: none; /* Remove bottom border when active */
+}
+
+.panel {
+  width: 100%;
+  padding: 18px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 2px solid #317bbc; /* Blue bottom border */
+}
+
+/* Specific styling for the images inside the hobbies section */
+.hobbies-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+  margin-top: 20px;
+}
+
+.hobbies-images img {
+  width: calc(25% - 10px); /* Adjust width of images to fit in the container */
+  object-fit: cover; /* Ensure images are cropped proportionally */
+  border-radius: 5px; /* Optional: add rounded corners to the images */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow to the images */
+}
+
+/* Ensure images are not affected by accordion or panel padding/margins */
+.panel .hobbies-images img {
+  padding: 0;
+  margin: 0;
+}
+
+/*Description Music*/
+
+.description-music{
+  width: 100%;
+  padding: 60px 70px; /* Reduced padding space between two section */
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  margin-left: 140px; 
+  margin-bottom: -100px;
+
+  
+}
+
+
+
+/*Spotify*/
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+}
+
+.episode {
+  min-width: max-content;
+  margin-bottom: .8rem;
+  padding: .8rem 1rem;
+  border-radius: 10px;
+  border: 0;
+  background: #191414;
+  color: #fff;
+  cursor: pointer;
+}
+
+.episode:hover {
+  background: #1Db954;
+}
+
