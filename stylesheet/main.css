@@ -111,6 +111,10 @@ header {
 
 }
 
+.nav-name{
+  font-weight: 500;
+}
+
 
 .nav-links {
   list-style: none;

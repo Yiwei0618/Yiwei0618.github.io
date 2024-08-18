@@ -4,7 +4,6 @@
     <title>Harry Potter Map</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yiwei Wu - About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
@@ -19,13 +18,13 @@
   <body>
     <!------------------ Navbar ---------------->
     <header>
-  
-   
-  
+
+ 
+
       <nav class="nav-container">
   
       <div class="nav-left">
-        <span class="nav-name">Yiwei Wu</span>
+      <span class="nav-name"><a href="./index.html">Yiwei Wu | 吴依蔚 </a></span>
       </div>
   
       <div class="menu-toggle">
@@ -35,8 +34,8 @@
   
         <ul class="nav-links">
           <li class="nav-link"><a href="./index.html"><b>About</b></a></li>
-          <li class="nav-link"><a href="#"><b>Projects</b></a></li>
-          <li class="nav-link"><a href="#"><b>CV</b></a></li>
+          <li class="nav-link"><a href="./projects.html"><b>Projects</b></a></li>
+          <li class="nav-link"><a href="https://drive.google.com/file/d/19fuFBsKjFbtm-FOzqLVxN7iESO3AEBlL/view?usp=sharing"><b>CV</b></a></li>
         </ul>
       </nav>
     </header>
@@ -73,7 +72,7 @@
         an interactive map interface where users can explore, search for, and save specific 
         locations featured in the Harry Potter films. Whether you're planning a magical trip 
         or just curious about the filming locations, this app is your guide to discovering the
-         iconic spots from the series.
+        iconic spots from the series.
 
        </p>
      
@@ -140,13 +139,30 @@
 
   <!-- Footer -->
   <footer>
-  <div class="spacer"></div>
-   <p>Copyright © 2024. All rights reserved.</p>
-   <h6>Designed and Developed by Yiwei with <span class="material-symbols-outlined">
-    music_note
-    </span> & <span class="material-symbols-outlined">
-      emoji_food_beverage
-      </span>
-    </h6>
-</footer>
+    <div class="spacer"></div>
+     <p>Copyright © 2024. All rights reserved.</p>
+     <h6>Designed and Developed by Yiwei with <span class="material-symbols-outlined">
+      music_note
+      </span> & <span class="material-symbols-outlined">
+        emoji_food_beverage
+        </span>
+      </h6>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+
+<script src="./scripts/accordion.js"></script>
+<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+
+</html>
     

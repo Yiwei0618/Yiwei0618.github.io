@@ -2,17 +2,17 @@
 <html>
 
 <head>
-  <title>Project - Rate My Professor</title>
+  <title>Project - Rate My Class</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" type="text/css" href="./stylesheet/main.css">
-  <link rel="stylesheet" type="text/css" href="./stylesheet/RocSolid.css">
-  <link rel="icon" href="./images/icon.png">
+  <link rel="stylesheet" type="text/css" href="./stylesheet/RateMyProfessor.css">
+  <link rel="icon" href="./images/favicon.png">
 
 
 </head>
@@ -20,13 +20,13 @@
 
   <!------------------ Navbar ---------------->
   <header>
-  
-   
-  
+
+ 
+
     <nav class="nav-container">
 
     <div class="nav-left">
-      <span class="nav-name">Yiwei Wu</span>
+    <span class="nav-name"><a href="./index.html">Yiwei Wu | 吴依蔚 </a></span>
     </div>
 
     <div class="menu-toggle">
@@ -35,9 +35,9 @@
     </div>
 
       <ul class="nav-links">
-        <li class="nav-link"><a href="#"><b>About</b></a></li>
-        <li class="nav-link"><a href="#"><b>Projects</b></a></li>
-        <li class="nav-link"><a href="#"><b>CV</b></a></li>
+        <li class="nav-link"><a href="./index.html"><b>About</b></a></li>
+        <li class="nav-link"><a href="./projects.html"><b>Projects</b></a></li>
+        <li class="nav-link"><a href="https://drive.google.com/file/d/19fuFBsKjFbtm-FOzqLVxN7iESO3AEBlL/view?usp=sharing"><b>CV</b></a></li>
       </ul>
     </nav>
   </header>
@@ -50,7 +50,7 @@
          <div class="detail">
           <div class="spacer"></div>
            <h1>
-             <b>Developing a web app for UT students to easily find and share professors' ratings</b>
+             <b>Developing a web app for UT students to easily find and share course ratings</b>
            </h1>
         
            <p>
@@ -74,10 +74,10 @@
         
            <h1><b>Background</b></h1>
            <p>
-            Our web app, 'Rate My UT Professor,' is designed to be a resource for University of Texas (UT) students to 
-            find ratings for various professors from previous years. It provides a more straightforward alternative to searching 
-            through Reddit or other sources. Additionally, this web app enables UT students to securely log in with their UT EID and 
-            leave reviews for their professors they took classes with.
+            Our web app, 'Rate My Class,' is designed to be a resource for University of Texas (UT) students to 
+            find ratings for various courses from previous years. It provides a more straightforward alternative to searching 
+            through Rate My Professor or other sources. Additionally, this web app enables UT students to securely log in with their UT EID and 
+            leave reviews for classes they took.
            </p>
 
            <h1><b>Links</b></h1>
@@ -85,42 +85,107 @@
             <b><a href = "https://ut-austin.vercel.app/homepage">View Vercel Deployment</a></b>
           </p>
            <p>
-            <b>View Github Code</b>
+            <b>View Github Code(currently under maintenance)</b>
           </p>
           <p>
             <b><a href = "https://docs.google.com/document/d/1gVJBxGz_bL_6sLSY58a9L1vq6HmHl-gZV-LJADP2zaM/edit?usp=sharing"> View Final Report</a></a></b>
           </p>
 
-       
-
-
-
-
 
            </div>
               <br>
-              <br>
-              <br>
+
+              <div class="detail">
+
+                <h1>Key Features</h1>
+                <br>
+                <h2>Sign in/Log out</h2>
+                <p>
+                  On this page we ask the user to login with their UT EID and password, if they match with the EID and 
+                  password stored in the database, we direct the user to the home page again with the top right showing 
+                  their login status. The user can click on the logout dropdown if they want to leave.
+                </p>
+                <div class="photo">
+                    <img src="./images/RateMyProfessor/Login.png" alt="interactive map">
+                </div>
+                <br>
+            
+                <h2>Homepage</h2>
+                <p>
+                  On this page we have the search bar, leave a review and most recent reviews to give users
+                  some idea of what this website does.
+                </p>
+                <div class="photo">
+                    <img src="./images/RateMyProfessor/Homepage.png" alt="search">
+                </div> 
+                <br>
+            
+                <h2>Search/Result</h2>
+                <p>
+                  On this page users can look up any courses and there is also a filter for the user to use for 
+                  a different type of searching experience. For the results, user can look at the course information 
+                  or look at the previous ratings in a new page.
+                </p>
+                <div class="photo">
+                  <img src="./images/RateMyProfessor/Search Page.png" alt="saved list">
+                </div> 
+                <br>
+               
+                <h2>Course/Professor</h2>
+                <p>
+                  On this page users see the information and ratings related to the course and professor. 
+                  The overall rating is an average score calculated from all the review ratings. 
+
+                </p>
+                <div class="photo">
+                  <img src="./images/RateMyProfessor/CourseProfessor.png" alt="saved list">
+                </div> 
+                <br>
+
+
+                <h2>Review page</h2>
+                <p>
+                  On this page, users will have to leave a review and a rating for 
+                  the professor corresponding course semester.
+                </p>
+                <div class="photo">
+                  <img src="./images/RateMyProfessor/Review Page.png" alt="saved list">
+                </div> 
+              
+               <br>
+        
+        
+            </div>
+        
+          </body>
+        
 
   <!-- Footer -->
   <footer>
-
     <div class="spacer"></div>
      <p>Copyright © 2024. All rights reserved.</p>
-     <h6>Designed and Developed by Yiwei Wu</h6>
+     <h6>Designed and Developed by Yiwei with <span class="material-symbols-outlined">
+      music_note
+      </span> & <span class="material-symbols-outlined">
+        emoji_food_beverage
+        </span>
+      </h6>
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-</script>
-<script>
- $(document).ready(function(){
-  $('.menu-toggle').click(function(){
-      $('.menu-toggle').toggleClass('active')
-      $('nav').toggleClass('active')
-  })
- })
-</script>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+
+<script src="./scripts/accordion.js"></script>
+<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
 </body>
 </html>
